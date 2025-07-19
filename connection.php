@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
+$host = 'db4free.net';
 $db = 'dbattendance';
-$user = 'root';
-$pass = '';
+$user = 'jakeuser';
+$pass = 'SerJekkk999';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -11,10 +11,11 @@ try {
     $pdo = new PDO($dsn, $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    // Hide sensitive error details
-    http_response_code(500); // Internal Server Error
-    die(json_encode([
+    http_response_code(500);
+    echo json_encode([
         'success' => false,
-        'message' => 'Database connection failed.'
-    ]));
+        'message' => 'Database connection failed: ' . $e->getMessage()
+    ]);
+    exit();
 }
+?>
