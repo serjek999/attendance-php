@@ -2,7 +2,7 @@
 // File: check_in.php
 $allowed_origins = [
     'http://localhost:3000',
-    'https://attendance-app-pearl-three.vercel.app'
+    'https://attendance-app-six-kappa.vercel.app/'
 ];
 // Allow from local frontend
 header("Access-Control-Allow-Origin: http://localhost:3000");

@@ -4,7 +4,7 @@
 // === CORS HEADERS ===
 $allowed_origins = [
     'http://localhost:3000',
-    'https://attendance-app-pearl-three.vercel.app'
+    'https://attendance-app-six-kappa.vercel.app/'
 ];
 
 if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allowed_origins)) {

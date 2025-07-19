@@ -2,7 +2,7 @@
 // File: login.php
 $allowed_origins = [
     'http://localhost:3000',
-    'https://attendance-app-pearl-three.vercel.app'
+    'https://attendance-app-six-kappa.vercel.app/'
 ];
 // CORS headers
 header("Access-Control-Allow-Origin: http://localhost:3000");

@@ -2,7 +2,7 @@
 // File: fetch_attendance.php
 $allowed_origins = [
     'http://localhost:3000',
-    'https://attendance-app-pearl-three.vercel.app'
+    'https://attendance-app-six-kappa.vercel.app/'
 ];
 header("Access-Control-Allow-Origin: http://localhost:3000");
 header("Content-Type: application/json; charset=UTF-8");
